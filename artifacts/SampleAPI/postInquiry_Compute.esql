@@ -12,7 +12,7 @@ CREATE COMPUTE MODULE postInquiry_Compute
 		Declare outref REFERENCE TO OutputRoot.JSON.Data;
 		SET OutputRoot.JSON.Data = inref;
 		
-		
+		--Abdul rauf Has fixed SAF ISSUE
 		
 		RETURN TRUE;
 	END;
