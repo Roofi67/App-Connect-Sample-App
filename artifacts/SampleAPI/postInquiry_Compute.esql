@@ -10,7 +10,8 @@ CREATE COMPUTE MODULE postInquiry_Compute
 		CREATE FIELD OutputRoot.JSON.Data;
 	
 		Declare outref REFERENCE TO OutputRoot.JSON.Data;
-		SET outref = inref;
+		SET OutputRoot.JSON.Data = inref;
+		
 		
 		
 		RETURN TRUE;
