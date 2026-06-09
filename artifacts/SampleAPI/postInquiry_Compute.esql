@@ -1,0 +1,21 @@
+
+
+CREATE COMPUTE MODULE postInquiry_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		
+		DECLARE inref Reference to InputRoot.JSON.Data;
+	
+		
+		CREATE FIELD OutputRoot.JSON.Data;
+	
+		Declare outref REFERENCE TO OutputRoot.JSON.Data;
+		SET OutputRoot.JSON.Data = inref;
+		
+		--Abdul rauf Has fixed SAF ISSUE
+		
+		RETURN TRUE;
+	END;
+
+	
+END MODULE;
