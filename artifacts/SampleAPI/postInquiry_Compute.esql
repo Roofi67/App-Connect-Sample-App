@@ -13,6 +13,7 @@ CREATE COMPUTE MODULE postInquiry_Compute
 		SET OutputRoot.JSON.Data = inref;
 		
 		--Abdul rauf Has fixed SAF ISSUE
+		--Sami wants to see the change
 		
 		RETURN TRUE;
 	END;
