@@ -17,7 +17,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo 'Running tests in UAT environment'
+                echo 'Running tests in UAT environment - Build Version 2'
             }
         }
 
