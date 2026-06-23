@@ -12,11 +12,12 @@ pipeline {
         stage('Verify ACE') {
     steps {
         bat '''
-        echo PATH=%PATH%
+        call "C:\\Program Files\\IBM\\ACE\\13.0.7.0\\server\\bin\\mqsiprofile.cmd"
         where ibmint
+        ibmint --help
         '''
-            }
         }
+            }
 
         stage('Show Project') {
             steps {
