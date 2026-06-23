@@ -9,21 +9,22 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Verify ACE') {
             steps {
-                echo 'Building App Connect project in UAT branch'
+                bat '''
+                cd "C:\\Program Files\\IBM\\ACE\\13.0.7.0\\server\\bin"
+                ibmint --help
+                '''
             }
         }
 
-        stage('Test') {
+        stage('Show Project') {
             steps {
-                echo 'Running tests in UAT environment - Build Version 2'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo 'Deploying to UAT environment'
+                bat '''
+                dir
+                dir artifacts
+                dir artifacts\\SampleAPI
+                '''
             }
         }
     }
