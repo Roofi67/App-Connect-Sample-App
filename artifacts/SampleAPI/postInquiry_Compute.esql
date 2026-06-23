@@ -12,11 +12,10 @@ CREATE COMPUTE MODULE postInquiry_Compute
 		Declare outref REFERENCE TO OutputRoot.JSON.Data;
 		SET OutputRoot.JSON.Data = inref;
 		
-<<<<<<< HEAD
+
 		--test and deploy on EG2
-=======
-		--Abdul rauf Has fixed SAF ISSUE
->>>>>>> branch 'Env/UAT' of https://github.com/Roofi67/App-Connect-Sample-App.git
+
+
 		
 		RETURN TRUE;
 	END;
