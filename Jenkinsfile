@@ -9,12 +9,14 @@ pipeline {
             }
         }
 
-        stage('Verify ACE') {
+        stage('Build BAR') {
     steps {
         bat '''
         call "C:\\Program Files\\IBM\\ACE\\13.0.7.0\\server\\bin\\mqsiprofile.cmd"
-        where ibmint
-        ibmint --help
+
+        ibmint package ^
+          --input-path artifacts/SampleAPI ^
+          --output-bar-file SampleAPI.bar
         '''
         }
             }
