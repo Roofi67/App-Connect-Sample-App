@@ -10,11 +10,11 @@ pipeline {
         }
 
         stage('Verify ACE') {
-            steps {
-                bat '''
-                cd "C:\\Program Files\\IBM\\ACE\\13.0.7.0\\server\\bin"
-                ibmint --help
-                '''
+    steps {
+        bat '''
+        echo PATH=%PATH%
+        where ibmint
+        '''
             }
         }
 
