@@ -6,7 +6,7 @@ pipeline {
         ACE_BIN = "${ACE_HOME}\\server\\bin"
         NODE_HOST = "DESKTOP-K2EKDF6"
         NODE_PORT = "4414"
-        INTEGRATION_SERVER = "EG1"
+        INTEGRATION_SERVER = "EG2"
         BAR_NAME = "SampleAPI.bar"
     }
 
